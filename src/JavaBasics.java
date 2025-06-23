@@ -99,7 +99,8 @@ public class JavaBasics {
             }
         } while (endofStringIndex <= startofStringIndex || endofStringIndex >=entireSentence.length());
 
-
+        String subString = entireSentence.substring(startofStringIndex, endofStringIndex);
+        System.out.println("Your Sub-string is" +subString);
 
     }
 }
