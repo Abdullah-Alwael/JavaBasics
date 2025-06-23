@@ -110,8 +110,25 @@ public class JavaBasics {
         entireSentence = input.nextLine();
 
         System.out.println("Enter a keyword to search for:");
-        String keywordtoLookFor = input.nextLine();
+        String keywordToLookFor = input.nextLine();
 
-        System.out.println("is "+keywordtoLookFor +" present?: " +entireSentence.contains(keywordtoLookFor));
+        System.out.println("is "+keywordToLookFor +" present?: " +entireSentence.contains(keywordToLookFor));
+
+        /*
+        * Develop a program that takes a sentence and a word to replace as input, then
+            replace all occurrences of the word with another word and prints the modified
+            sentence.
+        * */
+
+        System.out.println("Enter an entier sentence again:");
+        entireSentence = input.nextLine();
+
+        System.out.println("enter a word to replace:");
+        keywordToLookFor = input.nextLine();
+
+        System.out.println("enter a replacement word (substitute)");
+        String substituteWord = input.nextLine();
+
+        System.out.println("result = "+entireSentence.replace(keywordToLookFor, substituteWord));
     }
 }
