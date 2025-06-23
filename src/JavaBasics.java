@@ -60,6 +60,7 @@ public class JavaBasics {
 
         System.out.println("String Buildr");
         System.out.println("enter any string:");
+        input.nextLine();
         builtString = new StringBuilder(input.nextLine());
 
         int stringLength = builtString.length();
@@ -67,5 +68,38 @@ public class JavaBasics {
 
         StringBuilder reversedString = new StringBuilder(builtString.reverse());
         System.out.println("reverse of string is: "+reversedString);
+
+        /*
+        * 5. Develop a program that takes a sentence as input and extracts a substring from
+            it, then prints the extracted substring.
+            • Input: Sentence = "The quick brown fox jumps over the lazy dog", Start Index
+            = 10, End Index = 20
+            • Expected Output: "brown fox"
+        * */
+        System.out.println("substring calculator");
+        System.out.println("enter an entire sentence:");
+        input.nextLine();
+        String entireSentence = input.nextLine();
+
+        int startofStringIndex = -1;
+        do {
+            System.out.println("enter the start of the substring (integer number >=0<)"+entireSentence.length());
+            startofStringIndex = input.nextInt();
+            if (startofStringIndex < 0 || startofStringIndex >=entireSentence.length()){
+                System.out.println("Cant be, enter again");
+            }
+        } while (startofStringIndex < 0 || startofStringIndex >=entireSentence.length());
+
+        int endofStringIndex = 1;
+        do {
+            System.out.println("enter the end of the substring (integer number >=0<)"+entireSentence.length());
+            endofStringIndex = input.nextInt();
+            if (endofStringIndex < 0 || endofStringIndex >=entireSentence.length()){
+                System.out.println("Cant be, enter again");
+            }
+        } while (endofStringIndex >= entireSentence.length());
+
+
+
     }
 }
