@@ -80,7 +80,7 @@ public class JavaBasics {
 
         int startofStringIndex = -1;
         do {
-            System.out.println("enter the start of the substring (integer number >=0<)"+entireSentence.length());
+            System.out.println("enter the start of the substring (integer number >=0<"+entireSentence.length());
             startofStringIndex = input.nextInt();
             if (startofStringIndex < 0 || startofStringIndex >=entireSentence.length()){
                 System.out.println("Cant be, enter again");
@@ -89,7 +89,7 @@ public class JavaBasics {
 
         int endofStringIndex = 1;
         do {
-            System.out.println("enter the end of the substring (integer number >"+startofStringIndex+"<)"+entireSentence.length());
+            System.out.println("enter the end of the substring (integer number >"+startofStringIndex+"<"+entireSentence.length());
             endofStringIndex = input.nextInt();
             if (endofStringIndex <= startofStringIndex || endofStringIndex >=entireSentence.length()){
                 System.out.println("Cant be, enter again");
