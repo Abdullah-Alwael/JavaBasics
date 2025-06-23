@@ -58,7 +58,7 @@ public class JavaBasics {
         * */
         StringBuilder builtString;
 
-        System.out.println("String Buildr");
+        System.out.println("String Builder");
         System.out.println("enter any string:");
         input.nextLine();
         builtString = new StringBuilder(input.nextLine());
@@ -72,13 +72,10 @@ public class JavaBasics {
         /*
         * 5. Develop a program that takes a sentence as input and extracts a substring from
             it, then prints the extracted substring.
-            • Input: Sentence = "The quick brown fox jumps over the lazy dog", Start Index
-            = 10, End Index = 20
-            • Expected Output: "brown fox"
         * */
         System.out.println("substring calculator");
         System.out.println("enter an entire sentence:");
-        input.nextLine();
+//        input.nextLine();
         String entireSentence = input.nextLine();
 
         int startofStringIndex = -1;
@@ -100,7 +97,7 @@ public class JavaBasics {
         } while (endofStringIndex <= startofStringIndex || endofStringIndex >=entireSentence.length());
 
         String subString = entireSentence.substring(startofStringIndex, endofStringIndex);
-        System.out.println("Your Sub-string is" +subString);
+        System.out.println("Your Sub-string is: " +subString);
 
     }
 }
