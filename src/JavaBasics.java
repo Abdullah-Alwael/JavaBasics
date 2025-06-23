@@ -52,7 +52,20 @@ public class JavaBasics {
         System.out.println(desiredAmount);
 
         /*
-        *
+        * 4. Create a program that takes a string as input, calculates its length, and then
+          reverses the string using the StringBuilder class, finally printing both the length and
+          reversed string.
         * */
+        StringBuilder builtString;
+
+        System.out.println("String Buildr");
+        System.out.println("enter any string:");
+        builtString = new StringBuilder(input.nextLine());
+
+        int stringLength = builtString.length();
+        System.out.println("Length of string: "+stringLength);
+
+        StringBuilder reversedString = new StringBuilder(builtString.reverse());
+        System.out.println("reverse of string is: "+reversedString);
     }
 }
