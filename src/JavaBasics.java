@@ -115,7 +115,7 @@ public class JavaBasics {
         System.out.println("is "+keywordToLookFor +" present?: " +entireSentence.contains(keywordToLookFor));
 
         /*
-        * Develop a program that takes a sentence and a word to replace as input, then
+        * 7. Develop a program that takes a sentence and a word to replace as input, then
             replace all occurrences of the word with another word and prints the modified
             sentence.
         * */
@@ -130,5 +130,23 @@ public class JavaBasics {
         String substituteWord = input.nextLine();
 
         System.out.println("result = "+entireSentence.replace(keywordToLookFor, substituteWord));
+
+        /*
+        * Write a program that takes two strings as input and check if they are equal,
+            ignoring the case, then prints whether they are equal or not.
+        * */
+
+        System.out.println("String comparison");
+        System.out.println("Enter first string");
+        String firstString = input.nextLine();
+
+        System.out.println("Enter the second string:");
+        String secondString = input.next();
+
+        if (firstString.equalsIgnoreCase(secondString)){
+            System.out.println("Strings are equal");
+        } else {
+            System.out.println("String are not equal");
+        }
     }
 }
