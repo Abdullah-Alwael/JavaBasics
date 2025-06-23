@@ -92,12 +92,12 @@ public class JavaBasics {
 
         int endofStringIndex = 1;
         do {
-            System.out.println("enter the end of the substring (integer number >=0<)"+entireSentence.length());
+            System.out.println("enter the end of the substring (integer number >"+startofStringIndex+"<)"+entireSentence.length());
             endofStringIndex = input.nextInt();
-            if (endofStringIndex < 0 || endofStringIndex >=entireSentence.length()){
+            if (endofStringIndex <= startofStringIndex || endofStringIndex >=entireSentence.length()){
                 System.out.println("Cant be, enter again");
             }
-        } while (endofStringIndex >= entireSentence.length());
+        } while (endofStringIndex <= startofStringIndex || endofStringIndex >=entireSentence.length());
 
 
 
