@@ -99,5 +99,19 @@ public class JavaBasics {
         String subString = entireSentence.substring(startofStringIndex, endofStringIndex);
         System.out.println("Your Sub-string is: " +subString);
 
+        /*
+        * 6. Write a program that takes a sentence and a keyword as input, then check if
+            the keyword is present in the sentence and prints the result.
+        * */
+
+        System.out.println("Is present test");
+        System.out.println("Enter an entire sentence:");
+        input.nextLine();
+        entireSentence = input.nextLine();
+
+        System.out.println("Enter a keyword to search for:");
+        String keywordtoLookFor = input.nextLine();
+
+        System.out.println("is "+keywordtoLookFor +" present?: " +entireSentence.contains(keywordtoLookFor));
     }
 }
