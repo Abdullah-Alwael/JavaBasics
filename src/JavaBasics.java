@@ -141,7 +141,7 @@ public class JavaBasics {
         String firstString = input.nextLine();
 
         System.out.println("Enter the second string:");
-        String secondString = input.next();
+        String secondString = input.nextLine();
 
         if (firstString.equalsIgnoreCase(secondString)){
             System.out.println("Strings are equal");
